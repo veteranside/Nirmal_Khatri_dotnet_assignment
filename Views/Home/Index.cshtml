@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Job Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+            .hero-section h1 {
+                font-size: 3.5rem;
+                margin-bottom: 20px;
+            }
+
+            .hero-section p {
+                font-size: 1.2rem;
+                margin-bottom: 40px;
+            }
+
+        .cta-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .cta-button:hover {
+                background-color: #ff3b2f;
+            }
+
+        .features-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+
+            .feature h2 {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+                color: #2575fc;
+            }
+
+            .feature p {
+                font-size: 1rem;
+                color: #666;
+            }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+            .footer a {
+                color: #ff6f61;
+                text-decoration: none;
+            }
+
+                .footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1>Welcome to Job Portal</h1>
+        <p>Your gateway to finding the perfect job or the ideal candidate. Join thousands of employers and job seekers today!</p>
+        <button class="cta-button">Get Started</button>
+    </div>
+
+    <div class="features-section">
+        <div class="feature">
+            <h2>For Job Seekers</h2>
+            <p>Find your dream job with our advanced search tools and personalized recommendations. Upload your resume and apply to jobs in just a few clicks.</p>
+        </div>
+        <div class="feature">
+            <h2>For Employers</h2>
+            <p>Post job openings and reach thousands of qualified candidates. Our platform makes it easy to manage applications and find the right fit for your team.</p>
+        </div>
+        <div class="feature">
+            <h2>Career Resources</h2>
+            <p>Access a wealth of resources including resume tips, interview guides, and career advice to help you succeed in your job search.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Job Portal. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+</body>
+</html>

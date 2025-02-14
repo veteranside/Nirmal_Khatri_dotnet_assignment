@@ -1,0 +1,110 @@
+﻿@model Nirmal_Khatri_Dot_net_project_assignment.Models.JobSeeker
+
+@{
+    ViewData["Title"] = "Create JobSeeker";
+}
+
+<style>
+    .form-container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: #007bff;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .btn-secondary {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #6c757d;
+        color: white;
+        text-decoration: none;
+    }
+
+    .btn-secondary:hover {
+        background-color: #545b62;
+    }
+
+    .text-danger {
+        font-size: 14px;
+    }
+</style>
+
+<div class="form-container">
+    <h1>Create JobSeeker</h1>
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" type="email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ApplicationLink"></label>
+            <input asp-for="ApplicationLink" type="url" class="form-control" />
+            <span asp-validation-for="ApplicationLink" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
