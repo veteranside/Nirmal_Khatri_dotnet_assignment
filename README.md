@@ -1,0 +1,6 @@
+![job_portal (5)](https://github.com/user-attachments/assets/48cce523-0ae2-48ac-ae85-644d30b55408)
+![job_assigning page](https://github.com/user-attachments/assets/9a58174c-8e4e-4e07-be69-06d0a09402c1)
+![job seekers](https://github.com/user-attachments/assets/1bb5207b-4f51-4f03-8472-ba5f8df6a90e)
+![job investigator](https://github.com/user-attachments/assets/30fb2559-82d5-4dda-b82e-cf771d3c9b4c)
+![homepage](https://github.com/user-attachments/assets/764b2053-e6d0-42f3-91b5-e92908d87d15)
+![homepage (2)](https://github.com/user-attachments/assets/9acfe882-b4d4-4264-bebd-823163a4adf4)
